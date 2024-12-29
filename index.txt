@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>肯德基美食鉴赏与分享平台</title>
+    <!-- 在这里可以添加CSS文件的链接 -->
+    <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="肯德基Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#food-showcase">美食展示</a></li>
+                <li><a href="#taste-records">味道记录</a></li>
+                <li><a href="#share">分享</a></li>
+                <li><a href="#login">登录/注册</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="slider">
+            <!-- 轮播图片 -->
+        </div>
+        <h1>欢迎来到肯德基美食鉴赏平台</h1>
+        <button class="explore-btn">探索美食</button>
+    </section>
+
+    <section id="food-showcase" class="food-showcase">
+        <h2>美食展示</h2>
+        <div class="food-categories">
+            <!-- 美食分类导航 -->
+        </div>
+        <div class="food-grid">
+            <!-- 美食卡片布局 -->
+            <article class="food-card">
+                <img src="hanbao.jfif" alt="美食图片">
+                <h3>美食名称</h3>
+                <p>简短描述</p>
+                <button class="more-info-btn">了解更多</button>
+            </article>
+            <!-- 更多美食卡片 -->
+        </div>
+    </section>
+
+    <section id="taste-records" class="taste-records">
+        <h2>味道记录</h2>
+        <form>
+            <label for="food-name">美食名称:</label>
+            <input type="text" id="food-name" name="food-name" required>
+            
+            <label for="taste-review">评价:</label>
+            <textarea id="taste-review" name="taste-review" required></textarea>
+            
+            <label for="food-image">上传美食图片:</label>
+            <input type="file" id="food-image" name="food-image">
+            
+            <button type="submit">记录味道</button>
+        </form>
+        <div class="records-list">
+            <!-- 已记录的味道列表 -->
+        </div>
+    </section>
+
+    <section id="share" class="share">
+        <h2>分享您的美食体验</h2>
+        <div class="social-media-share">
+            <!-- 社交媒体分享按钮 -->
+        </div>
+        <div class="invite-friends">
+            <!-- 邀请朋友加入平台的功能 -->
+        </div>
+        <div class="share-wall">
+            <!-- 用户分享记录的动态墙 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>版权所有 &copy; 肯德基美食鉴赏与分享平台</p>
+        <p>联系方式: example@example.com</p>
+        <!-- 友情链接等 -->
+    </footer>
+    <!-- 在这里可以添加JavaScript文件的链接 -->
+    <!-- <script src="scripts.js"></script> -->
+</body>
+</html>

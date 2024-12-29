@@ -1,0 +1,334 @@
+/* 全局样式 */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #0b4a5b; /* 深色调 */
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    width: 100px; /* 根据实际Logo大小调整 */
+    padding: 10px 20px;
+    float: left;
+}
+
+nav .nav-links {
+    float: right;
+}
+
+nav .nav-links li {
+    display: inline;
+    padding: 20px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 首页Banner样式 */
+.banner {
+    background: url('banner-image.jpg') no-repeat center center/cover;
+    height: 500px; /* 根据实际图片大小调整 */
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 60px; /* 导航栏的高度 */
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #f3c623;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* 美食展示区样式 */
+.food-showcase {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.food-showcase h2 {
+    margin-bottom: 20px;
+}
+
+.food-card {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.food-card img {
+    width: 100%;
+    height: auto;
+}
+
+.food-card h3 {
+    margin: 10px 0;
+}
+
+.more-info-btn {
+    background-color: #0b4a5b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* 味道记录区样式 */
+.taste-records {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.taste-records h2 {
+    margin-bottom: 20px;
+}
+
+.taste-records form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.taste-records label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.taste-records input[type="text"],
+.taste-records textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.taste-records button[type="submit"] {
+    background-color: #0b4a5b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* 分享区样式 */
+.share {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.share h2 {
+    margin-bottom: 20px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #0b4a5b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}.food-card img {
+    max-width: 250px; /* 设置图片最大宽度为250px */
+    max-height: 250px; /* 可选，如果需要限制最大高度 */
+    width: auto; /* 保持图片的宽高比 */
+    height: auto; /* 保持图片的宽高比 */
+} 
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea, button {
+    margin: 5px 0;
+}
+
+#messages {
+    list-style-type: none;
+    padding: 0;
+}
+
+.message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+/* 轮播图样式 */
+.slider {
+    position: relative;
+    width: 600px; /* 设置轮播图的宽度 */
+    height: 400px; /* 设置轮播图的高度 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: absolute; /* 使用绝对定位，所有slide重叠在一起 */
+    top: 0;
+    left: 0;
+    width: 100%; /* slide宽度与slider相同 */
+    height: 100%; /* slide高度与slider相同 */
+    display: none; /* 默认不显示 */
+}
+
+.slide.active {
+    display: block; /* 显示当前slide */
+}
+
+.slide img {
+    width: 100%; /* 图片宽度占满slide */
+    height: 100%; /* 图片高度占满slide */
+    object-fit: cover; /* 覆盖整个slide，可能会裁剪图片 */
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    color: white;
+    text-align: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* 底部圆点 */
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* 底部圆点 */
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
